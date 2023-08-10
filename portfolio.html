@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./portfolio.css" />
+    <link href="./registration.js" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="home-nav">
+      <a href="#home">
+        <div class="nav-logo">
+          <img src="./assets/mylogo.png" alt="mylogo" />
+          <span>Airlines </span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li class="navlinks-li">
+          <a href="#home">Home</a>
+        </li>
+        <li class="navlinks-li">
+          <a href="#projects">Data</a>
+        </li>
+        <li class="navlinks-li">
+          <a href="#registration">Registration</a>
+        </li>
+        <li class="navlinks-li">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /Navbar -->
+    <!-- Banner -->
+    <header id="home">
+      <div class="header-content">
+        <p class="header-text">
+          Bello!Bello! Cest banana! Hahaha! Miam Miam! Huh. <br />
+          No, no, no! Hey, a piñata!.Uh, la cucaracha. <br />
+          Freeze ray!Biboli maaaa! Bohayinaaa-ah no nooo! <br />
+          Poopaye!Poopaye!
+        </p>
+      </div>
+      <div class="header-image">
+        <img src="./assets/myimage.png" alt="myimage" />
+      </div>
+    </header>
+    <!-- /Banner -->
+    <!-- Projects -->
+    <main id="data">
+      <div class="containerx">
+        <table class="default" border="2" cellpadding="3" cellspacing="0">
+          <caption>
+            <span class="hidden"> Boston to Portland, OR </span>
+          </caption>
+          <tbody>
+            <tr>
+              <th style="width: 120px" scope="col">Status</th>
+              <th colspan="3" style="width: 396px" scope="col">Departure</th>
+              <th colspan="3" style="width: 396px" scope="col">Arrival</th>
+            </tr>
+            <tr style="background: #e7ebd9">
+              <td
+                style="width: 120px; vertical-align: middle !important"
+                rowspan="2"
+                class="ontime"
+              >
+                <div style="margin-left: 30px">On Time Departure</div>
+              </td>
+              <th style="width: 236px; font-weight: bold" scope="col">City</th>
+              <th style="width: 80px; font-weight: bold" scope="col">
+                Scheduled
+              </th>
+              <th style="width: 80px; font-weight: bold" scope="col">
+                Estimated
+              </th>
+              <th style="width: 236px; font-weight: bold" scope="col">City</th>
+              <th style="width: 80px; font-weight: bold" scope="col">
+                Scheduled
+              </th>
+              <th style="width: 80px; font-weight: bold" scope="col">
+                Estimated
+              </th>
+            </tr>
+
+            <tr style="background: white">
+              <td>
+                Boston
+                <br />
+              </td>
+              <td>5:15 PM <br />Jun 10</td>
+              <td>
+                <span style="font-weight: bold">5:20 PM<br />Jun 10</span>
+              </td>
+              <td>
+                Portland, OR
+                <br />
+                Gate B1
+              </td>
+              <td>8:40 PM <br />Jun 10</td>
+              <td>
+                <span style="font-weight: bold">8:35 PM<br />Jun 10</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <!-- /Projects -->
+    <!-- Skills -->
+    <section id="registration">
+      <form>
+        <div class="elem-group">
+          <label for="name">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            name="visitor_name"
+            placeholder="John Doe"
+            pattern="[A-Z\sa-z]{3,20}"
+            required
+          />
+        </div>
+        <div class="elem-group">
+          <label for="email">Your E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="visitor_email"
+            placeholder="john.doe@email.com"
+            required
+          />
+        </div>
+        <div class="elem-group">
+          <label for="phone">Your Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            name="visitor_phone"
+            placeholder="498-348-3872"
+            pattern="(\d{3})-?\s?(\d{3})-?\s?(\d{4})"
+            required
+          />
+        </div>
+        <hr />
+        <div class="elem-group inlined">
+          <label for="adult">Adults</label>
+          <input
+            type="number"
+            id="adult"
+            name="total_adults"
+            placeholder="2"
+            min="1"
+            required
+          />
+        </div>
+        <div class="elem-group inlined">
+          <label for="child">Children</label>
+          <input
+            type="number"
+            id="child"
+            name="total_children"
+            placeholder="2"
+            min="0"
+            required
+          />
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkin-date">Travel Date</label>
+          <input type="date" id="checkin-date" name="checkin" required />
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkin-date">Return Date</label>
+          <input type="date" id="checkin-date" name="checkin" required />
+        </div>
+
+        <div class="elem-group">
+          <label for="room-selection">Select Seat Preference</label>
+          <select id="room-selection" name="room_preference" required>
+            <option value="">Choose a Seat from the List</option>
+            <option value="economy">Economy Class</option>
+            <option value="premium-economy">Premium Economy Class</option>
+            <option value="business">Business Class</option>
+            <option value="first-class">First Class</option>
+          </select>
+        </div>
+        <hr />
+        <div class="elem-group">
+          <label for="message">Anything Else?</label>
+          <textarea
+            id="message"
+            name="visitor_message"
+            placeholder="Tell us anything else that might be important."
+            required
+          ></textarea>
+        </div>
+        <button type="submit">Book The Seats</button>
+      </form>
+      <script src="./registration.js"></script>
+    </section>
+    <!-- /Skills -->
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="container-footer"></div>
+    </footer>
+    <!-- /Footer -->
+  </body>
+</html>
