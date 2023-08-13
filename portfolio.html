@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./portfolio.css" />
     <link href="./registration.js" />
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
 
     <title> Budget Airways | Book Your Flight</title>
   </head>
   <body>
+    
+
+
     <!-- Navbar -->
     <nav class="home-nav">
       <a href="#home">
@@ -51,15 +55,16 @@
     <!-- Projects -->
     <main id="data">
       <div class="containerx">
-        <table class="default" border="2" cellpadding="3" cellspacing="0">
+        <table class="default" border="5" cellpadding="3" cellspacing="2">
           <caption>
-            <span class="hidden"> Boston to Portland </span>
+            <span class="hidden"> <b>From Boston to Portland : </b> </span>
           </caption>
           <tbody>
             <tr>
-              <th style="width: 120px" scope="col">Status</th>
-              <th colspan="3" style="width: 396px; height: 30px" scope="col">Departure</th>
-              <th colspan="3" style="width: 396px; height:30px" scope="col">Arrival</th>
+              
+              <th style="width: 120px;color:white; background:midnightblue" scope="col">Status</th>
+              <th colspan="3" style="width: 420px; height: 70px;color:white ;background: midnightblue" scope="col">Departure</th>
+              <th colspan="3" style="width: 420px; height:70px;color:white; background: midnightblue" scope="col">Arrival</th>
             </tr>
             <tr style="background: #e7ebd9">
               <td
@@ -69,7 +74,7 @@
               >
                 <div style="margin-left: 30px">On Time Departure</div>
               </td>
-              <th style="width: 236px; font-weight: bold" scope="col">City</th>
+              <th style="width: 236px; font-weight: bold; height:80px" scope="col">City</th>
               <th style="width: 80px; font-weight: bold" scope="col">
                 Scheduled
               </th>
@@ -85,14 +90,16 @@
               </th>
             </tr>
 
-            <tr style="background: white">
+            <tr style="background: white; height:90px">
               <td>
                 Boston
+                
                 <br />
               </td>
               <td>5:15 PM <br />Jun 10</td>
               <td>
-                <span style="font-weight: bold">5:20 PM<br />Jun 10</span>
+                <span style="font-weight: bold">5:20 PM<br />
+                  Jun 10</span>
               </td>
               <td>
                 Portland, OR
@@ -118,7 +125,7 @@
             type="text"
             id="name"
             name="visitor_name"
-            placeholder="John Doe"
+            placeholder="Joe Rogan"
             pattern="[A-Z\sa-z]{3,20}"
             required
           />
@@ -129,7 +136,7 @@
             type="email"
             id="email"
             name="visitor_email"
-            placeholder="john.doe@email.com"
+            placeholder="joerogan@gmail.com"
             required
           />
         </div>
@@ -139,10 +146,20 @@
             type="tel"
             id="phone"
             name="visitor_phone"
-            placeholder="498-348-3872"
+            placeholder="123-456-7890"
             pattern="(\d{3})-?\s?(\d{3})-?\s?(\d{4})"
             required
           />
+          
+          <form name="form1" action="#">
+            <ul>
+            <li>&nbsp;</li>
+            <li class="submit"><input type="submit" name="submit" value="Submit" onclick="phonenumber(document.form1.text1)"/></li>
+            <li>&nbsp;</li>
+            </ul>
+            </form>
+            
+          
         </div>
         <hr />
         <div class="elem-group inlined">
@@ -188,16 +205,21 @@
         </div>
         <hr />
         <div class="elem-group">
-          <label for="message">Anything Else?</label>
+          <label for="message">Anything else?</label>
           <textarea
             id="message"
             name="visitor_message"
             placeholder="Tell us anything else that might be important."
             required
           ></textarea>
+          
+      
+
         </div>
-        <button type="submit">Book The Seats</button>
+          
+        <button type="submit"><b>Book Seat(s)</b></button>
       </form>
+      
       <script src="./registration.js"></script>
     </section>
     <!-- /Skills -->
@@ -205,9 +227,12 @@
     <footer id="contact">
       <div class="footer-content">
         <h3>Enjoy Your Flight!</h3>
-        <p>Make sure you stay connected with Budget Airways on other platforms for latest updates and information to enhance your flying journey.</p>
-      
+        <p>Make sure to stay connected with Budget Airways on other platforms for latest updates and information to enhance your flying journey.</p>
+    
+
+
       </div>
+      
       <!--Footer menu-->
       <div class="footer-menu">
         <ul class="f-menu">
@@ -226,6 +251,7 @@
       </div>
   
     </footer>
-    <!-- /Footer -->
+    
   </body>
 </html>
+
