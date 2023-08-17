@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./portfolio.css" />
     <link href="./registration.js" />
-    <title>Document</title>
+    <title>Flight boooking site</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -14,7 +14,7 @@
       <a href="#home">
         <div class="nav-logo">
           <img src="./assets/mylogo.png" alt="mylogo" />
-          <span>Airlines </span>
+          <span style="color: black;">INDIAN AIRLINES </span>
         </div>
       </a>
       <ul class="nav-links">
@@ -37,10 +37,9 @@
     <header id="home">
       <div class="header-content">
         <p class="header-text">
-          Bello!Bello! Cest banana! Hahaha! Miam Miam! Huh. <br />
-          No, no, no! Hey, a piñata!.Uh, la cucaracha. <br />
-          Freeze ray!Biboli maaaa! Bohayinaaa-ah no nooo! <br />
-          Poopaye!Poopaye!
+          <h1 style="color: #ffffff;">ANYWHERE YOU WANT TO BE. </h1><br/>
+          <h2 style="color: #ffffff;">CHEAPEST FLIGHT BOOKING</h2><br/>
+
         </p>
       </div>
       <div class="header-image">
@@ -53,39 +52,40 @@
       <div class="containerx">
         <table class="default" border="2" cellpadding="3" cellspacing="0">
           <caption>
-            <span class="hidden"> Boston to Portland, OR </span>
+            <span class="hidden"><h1> Boston to Portland</h1> </span>
           </caption>
           <tbody>
             <tr>
-              <th style="width: 120px" scope="col">Status</th>
-              <th colspan="3" style="width: 396px" scope="col">Departure</th>
-              <th colspan="3" style="width: 396px" scope="col">Arrival</th>
+              <tr style="background: #FBD85D;">
+              <th style="width: 300px" scope="col">Status</th>
+              <th colspan="3" style="width: 300px" scope="col">Departure</th>
+              <th colspan="3" style="width: 300px" scope="col">Arrival</th>
             </tr>
-            <tr style="background: #e7ebd9">
+            <tr style="background: #FBD85D">
               <td
-                style="width: 120px; vertical-align: middle !important"
+                style="width: 300px; vertical-align: middle !important"
                 rowspan="2"
                 class="ontime"
               >
                 <div style="margin-left: 30px">On Time Departure</div>
               </td>
-              <th style="width: 236px; font-weight: bold" scope="col">City</th>
-              <th style="width: 80px; font-weight: bold" scope="col">
+              <th style="width: 300px; font-weight: bold" scope="col">City</th>
+              <th style="width: 300px; font-weight: bold" scope="col">
                 Scheduled
               </th>
-              <th style="width: 80px; font-weight: bold" scope="col">
+              <th style="width: 300px; font-weight: bold" scope="col">
                 Estimated
               </th>
-              <th style="width: 236px; font-weight: bold" scope="col">City</th>
-              <th style="width: 80px; font-weight: bold" scope="col">
+              <th style="width: 300px; font-weight: bold" scope="col">City</th>
+              <th style="width: 300px; font-weight: bold" scope="col">
                 Scheduled
               </th>
-              <th style="width: 80px; font-weight: bold" scope="col">
+              <th style="width: 300px; font-weight: bold" scope="col">
                 Estimated
               </th>
             </tr>
 
-            <tr style="background: white">
+            <tr style="background: #EADBC8">
               <td>
                 Boston
                 <br />
@@ -95,7 +95,7 @@
                 <span style="font-weight: bold">5:20 PM<br />Jun 10</span>
               </td>
               <td>
-                Portland, OR
+                Portland
                 <br />
                 Gate B1
               </td>
@@ -120,6 +120,7 @@
             name="visitor_name"
             placeholder="John Doe"
             pattern="[A-Z\sa-z]{3,20}"
+            input[type="text"]
             required
           />
         </div>
@@ -130,6 +131,7 @@
             id="email"
             name="visitor_email"
             placeholder="john.doe@email.com"
+            input[type="email"]
             required
           />
         </div>
@@ -141,6 +143,7 @@
             name="visitor_phone"
             placeholder="498-348-3872"
             pattern="(\d{3})-?\s?(\d{3})-?\s?(\d{4})"
+            input[type="number"]
             required
           />
         </div>
@@ -153,6 +156,7 @@
             name="total_adults"
             placeholder="2"
             min="1"
+            input[type="number"]
             required
           />
         </div>
@@ -164,6 +168,7 @@
             name="total_children"
             placeholder="2"
             min="0"
+            input[type="number"]
             required
           />
         </div>
@@ -193,6 +198,7 @@
             id="message"
             name="visitor_message"
             placeholder="Tell us anything else that might be important."
+            input[type="text"]
             required
           ></textarea>
         </div>
@@ -202,9 +208,30 @@
     </section>
     <!-- /Skills -->
     <!-- Footer -->
-    <footer id="contact">
-      <div class="container-footer"></div>
-    </footer>
+    <footer>
+      <div class="footer">
+      <div class="row">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-youtube"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
+      
+      <div class="row">
+      <ul>
+      <li><a href="#">Contact us</a></li>
+      <li><a href="#">Our Services</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms & Conditions</a></li>
+      <li><a href="#">Career</a></li>
+      </ul>
+      </div>
+      
+      <div class="row">
+      AIR INDIA Copyright © 2023 All rights reserved
+      </div>
+      </div>
+      </footer>
     <!-- /Footer -->
   </body>
 </html>
